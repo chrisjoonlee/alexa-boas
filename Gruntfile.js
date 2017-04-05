@@ -60,7 +60,8 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks("grunt-babel");
     grunt.loadNpmTasks("grunt-exec");
 
-    grunt.registerTask("build", ["create_log", "babel", "eslint"]);
+    grunt.registerTask("init", ["create_log"])
+    grunt.registerTask("build", ["babel", "eslint"]);
     grunt.registerTask("produce", ["babel", "eslint", "concat", "uglify"]);
 
 };

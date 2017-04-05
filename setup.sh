@@ -16,8 +16,7 @@ echo "export NVM_DIR=\"$HOME/.nvm\"
 
 echo "Testing nvm..."
 command -v nvm
-#
-# 2. Update node and npm
+# # 2. Update node and npm
 npm install -g npm
 nvm install 6.10.1
 node -v   # Should be 6.10.1
@@ -73,7 +72,7 @@ There are many modules at play, so let's break them down one by one.
 
 # Static Typing & Linting
 ## Flow Type Checker
-You don't *have to* use it, but it would definitely facilitate your production
+You don't _have to_ use it, but it would definitely facilitate your production
 process if you do. Even if you choose not to, I will be using it so you might
 still want to transpile any JavaScript code you get from me with \`babel\`.
 
@@ -149,21 +148,26 @@ For now, you must remember 2 things: \`npm run bst proxy lambda /path/to/index
 .js\` to run the proxy server, then \`npm run best speak something\` to mimic
 a test request.
 
-# Automation - Grunt
+# Grunt
 Grunt automates all tedious stuff. I set it up so that you almost never have
 to run Babel and ESLint yourself. (You have to run \`bst\` yourself, but if
 you're really *that* lazy you can probably just write up a small shell script
 for that).
 
-The following line will transpile all JavaScript in test/ and move them to
-src/, then lint everything:
+You should run the following command before testing with \`bst\` because it
+create the log directory for that date. You can also run \`npm run log-init\`.
 
-    \`\$ grunt build\`
+\`\$ grunt init\`
+
+The following line will transpile all JavaScript in test/ and move them to
+src/, then lint everything (You can also do \`npm run build\`):
+
+\`\$ grunt build\`
 
 This is probably all we're going to use for a while. There is an option to
 create a distributable version, though (concatenated scripts, uglified, etc.)
 
-    \`\$ grunt produce\`
+\`\$ grunt produce\`
 
 All configuration details can be found in \`Gruntfile.js\`.
 
