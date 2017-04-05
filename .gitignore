@@ -1,0 +1,10 @@
+# Ignore .rootkey.csv, which has the access key to AWS and Alexa
+.rootkey.csv
+
+# Ignore unrelated directories
+/boaz_archive/
+/examples/
+/docs/
+/ode_modules/
+/ethinkdb_data/
+/eqlenv/
