@@ -1,5 +1,10 @@
 #!/bin/bash
 # Bash script to set up the work environment for Alexa SDK on Node.js
+# First, we need an empty log directory. It wasn't included in the repo
+# because Github doesn't allow empty folders.
+mkdir log
+# Don't upload logs to the repo! This is for YOU to use.
+echo "/log/" >> .gitignore
 # Prerequisite: Node.js, npm, Python3 (with pip and virtualenv)
 # ============================================================================
 # Install Node.js 6.10.1 & npm 4.4.4 (latest versions) with nvm
