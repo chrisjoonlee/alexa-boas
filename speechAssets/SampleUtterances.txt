@@ -1,0 +1,3 @@
+HelloWorldIntent wake up
+HelloWorldIntent hello
+ByeWorldIntent bye

@@ -1,0 +1,38 @@
+{
+  "name": "iva-project",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "babel-node": "./node_modules/.bin/babel-node",
+    "babel-version": "babel --version",
+    "bst": "./node_modules/.bin/bst",
+    "build": "babel test/ -d src/",
+    "eslint": "./node_modules/.bin/eslint",
+    "eslint-fix": "./node_modules/.bin/eslint --fix",
+    "flow": "./node_modules/flow-bin/vendor/flow",
+    "grunt": "./node_modules/.bin/grunt",
+    "log-init": "chmod +777 .createlog.py; ./.createlog.py",
+    "prepublish": "npm run build"
+  },
+  "devDependencies": {
+    "alexa-sdk": "^1.0.7",
+    "babel-cli": "^6.24.0",
+    "babel-eslint": "^6.1.2",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "bespoken-tools": "^0.9.33",
+    "dotenv": "^4.0.0",
+    "eslint": "^3.19.0",
+    "flow-bin": "^0.42.0",
+    "flow-vim-quickfix": "^0.3.0",
+    "grunt": "^1.0.1",
+    "grunt-babel": "^6.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-uglify": "^2.3.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-exec": "^2.0.0",
+    "gruntify-eslint": "^3.1.0",
+    "mocha": "^3.2.0",
+    "rethinkdb": "^2.3.3",
+    "winston": "^2.3.1"
+  }
+}

@@ -1,0 +1,10 @@
+[ignore]
+.*/boaz_archive/.*
+.*/fact-skill/.*
+
+[include]
+.*/src/*.
+
+[libs]
+
+[options]
