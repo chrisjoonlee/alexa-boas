@@ -5,6 +5,6 @@
 /boaz_archive/
 /examples/
 /docs/
-/ode_modules/
-/ethinkdb_data/
-/eqlenv/
+/node_modules/
+/rethinkdb_data/
+/reqlenv/
