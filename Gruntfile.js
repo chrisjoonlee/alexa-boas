@@ -45,7 +45,10 @@ module.exports = function (grunt) {
         exec: {
             create_log: {
                 command: 'npm run log-init'
-            }
+            },
+            pull: {
+                command: 'git pull'
+            },
         },
         watch: {
             files: ["<%= eslint.test %>"],
@@ -60,7 +63,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks("grunt-babel");
     grunt.loadNpmTasks("grunt-exec");
 
-    grunt.registerTask("init", ["create_log"])
+    grunt.registerTask("init", ["exec:create_log", "exec:pull"])
     grunt.registerTask("build", ["babel", "eslint"]);
     grunt.registerTask("produce", ["babel", "eslint", "concat", "uglify"]);
 
