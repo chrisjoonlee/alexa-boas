@@ -1,3 +1,5 @@
+
+
 {
     "use strict";
 
@@ -18,6 +20,6 @@
 
         "ByeWorldIntent": function () {
             this.emit(":tell", "Bye World!");
-        }
-    };
+        } };
+
 }
