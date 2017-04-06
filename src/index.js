@@ -13,8 +13,6 @@
 
     var handlers = {
         "HelloWorldIntent": function () {
-            console.log("will this show up?");
-            logger.info("this is an info");
             this.emit(":tell", "Hello World!");
         },
 

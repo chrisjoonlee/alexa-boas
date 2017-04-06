@@ -6,3 +6,5 @@ $ cd alexa-boas
 $ chmod +777 setup.sh
 $ ./setup.sh  
 ``` 
+
+In the `headers` directory are custom headers for each file type. Please use appropriate headers when creating a new file. These headers are subject to change if and only if such change is necessary.

@@ -1,0 +1,10 @@
+:insert
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+#
+# Copyright 2017 COMPANY NAME
+#
+# This file is subject to the terms and conditions defined in the file
+# 'LICENSE.txt', which is located at the root of the package.
+
+.
