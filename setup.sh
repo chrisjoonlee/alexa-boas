@@ -57,9 +57,10 @@ PID=$!; kill -INT $PID
 nano src/index.js
 # ============================================================================
 # Set up RethinkDB
-virtualenv reqlenv -p python3
-source reqlenv/bin/activate
+virtualenv boasenv -p python3
+source boasenv/bin/activate
 pip install rethinkdb
+pip install SPARQLWrapper
 deactivate
 # Install JS driver as well just in case
 npm install --save-dev rethinkdb
@@ -81,9 +82,9 @@ you can invoke the Flow binary with \`npm run flow\` anywhere in your project
 directory.
 
 While you can manually create a \`.flowconfig\` file at the root directory, you
-can also use \`flow init\` command to generate it automatically. For any details
-on how to configure your Flow with the config file, refer to the [official
-documentation](https://flow.org/en/).
+can also use \`flow init\` command to generate it automatically. For any 
+details on how to configure your Flow with the config file, refer to the 
+[official documentation](https://flow.org/en/).
 
 In order to type check your code at any time during production, you can simply
 run \`flow status\` or \`flow\` in the terminal.
